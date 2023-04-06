@@ -3,8 +3,8 @@ import Login from '../Login/Login';
 
 function App() {
   return (
-    <div>
-        <h1>Crazy Nails</h1>
+    <div className='container'>
+        <p>Loading...</p>
         <Login />
     </div>
   )

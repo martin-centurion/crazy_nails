@@ -1,0 +1,6 @@
+.login {
+    background-color: var(--clr-blanco);
+    padding: 2rem;
+    position: absolute;
+    width: 100%;
+}
