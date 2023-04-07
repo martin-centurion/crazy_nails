@@ -12,17 +12,17 @@
 
 
 .servicios__content-title > h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: var(--ff-titulos);
-    font-weight: 400;
+    font-weight: 600;
     color: var(--clr-secundario);
     margin-bottom: .5rem;
 }
 
 .servicios__content-title > p {
-    font-size: 1rem;
+    font-size: .8rem;
     font-family: var(--ff-titulos);
-    font-weight: 400;
+    font-weight: 600;
     color: var(--clr-oscuro);
     margin-bottom: 1rem;
 }

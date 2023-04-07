@@ -15,7 +15,7 @@ function ItemList() {
             <div className='servicios__content-img'>
                 <p>Imágen</p>
             </div>
-            <Button>Reservar <Icons><BiShoppingBag /></Icons></Button>
+            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
         </div>
         <div className='servicios__content'>
             <div className='servicios__content-title'>
@@ -25,7 +25,7 @@ function ItemList() {
             <div className='servicios__content-img'>
                 <p>Imágen</p>
             </div>
-            <Button>Reservar <Icons><BiShoppingBag /></Icons></Button>
+            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
         </div>
         <div className='servicios__content'>
             <div className='servicios__content-title'>
@@ -35,7 +35,7 @@ function ItemList() {
             <div className='servicios__content-img'>
                 <p>Imágen</p>
             </div>
-            <Button>Reservar <Icons><BiShoppingBag /></Icons></Button>
+            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
         </div>
         <div className='servicios__content'>
             <div className='servicios__content-title'>
@@ -45,7 +45,7 @@ function ItemList() {
             <div className='servicios__content-img'>
                 <p>Imágen</p>
             </div>
-            <Button>Reservar <Icons><BiShoppingBag /></Icons></Button>
+            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
         </div>
         <div className='servicios__content'>
             <div className='servicios__content-title'>
@@ -55,7 +55,7 @@ function ItemList() {
             <div className='servicios__content-img'>
                 <p>Imágen</p>
             </div>
-            <Button>Reservar <Icons><BiShoppingBag /></Icons></Button>
+            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
         </div>
         <div className='servicios__content'>
             <div className='servicios__content-title'>
@@ -65,7 +65,7 @@ function ItemList() {
             <div className='servicios__content-img'>
                 <p>Imágen</p>
             </div>
-            <Button>Reservar <Icons><BiShoppingBag /></Icons></Button>
+            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
         </div>
         
     </div>
