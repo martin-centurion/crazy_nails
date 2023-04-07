@@ -7,4 +7,13 @@
     background-color: var(--clr-oscuro);
     color: var(--clr-claro);
     padding: 1rem;
+    margin: 2rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.nav-bar .icono:hover {
+    background-color: var(--clr-primario);
+    color: var(--clr-oscuro);
 }
