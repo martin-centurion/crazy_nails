@@ -47,6 +47,26 @@ function ItemList() {
             </div>
             <Button>Reservar <Icons><BiShoppingBag /></Icons></Button>
         </div>
+        <div className='servicios__content'>
+            <div className='servicios__content-title'>
+                    <h3>Manicura</h3>
+                    <p>20% Off desde App.</p>
+            </div>
+            <div className='servicios__content-img'>
+                <p>Imágen</p>
+            </div>
+            <Button>Reservar <Icons><BiShoppingBag /></Icons></Button>
+        </div>
+        <div className='servicios__content'>
+            <div className='servicios__content-title'>
+                    <h3>Pedicure</h3>
+                    <p>Crema de almendras.</p>
+            </div>
+            <div className='servicios__content-img'>
+                <p>Imágen</p>
+            </div>
+            <Button>Reservar <Icons><BiShoppingBag /></Icons></Button>
+        </div>
         
     </div>
   )
