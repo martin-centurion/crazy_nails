@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css'
 import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 
 function FormRegisterd() {
   return (
@@ -19,7 +20,9 @@ function FormRegisterd() {
                     </label>
                 </form>
                 <p className='pass'>Olvido su contraseña?</p>
-                <Button />
+                <Link to="/servicios">
+                    <Button />
+                </Link>
         </div>
     </div>
   )

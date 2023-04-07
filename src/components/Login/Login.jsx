@@ -5,7 +5,7 @@ import './styles.css';
 
 function Login() {
   return (
-    <div className='login'>
+    <div className='login container'>
         <Logo />
         <FormRegisterd />
     </div>

@@ -46,10 +46,11 @@ form label input {
     border-radius: 10px;
     padding: .75rem;
     width: 280px;
-    border: 0;
     background-color: var(--clr-primario);
     color: var(--clr-oscuro);
+    border: 0;
 }
+
 
 form label input::placeholder {
     color: var(--clr-terciario);
