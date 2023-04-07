@@ -1,8 +1,9 @@
 import React from 'react';
+import './styles.css';
 
 function Logo() {
   return (
-    <h1>Crazy Nails</h1>
+    <h1 className='logo'></h1>
   )
 }
 

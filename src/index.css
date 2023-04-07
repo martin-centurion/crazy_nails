@@ -8,11 +8,11 @@
 
 :root {
     /* Paleta de Colores */
-    --clr-primario: rgb(246, 175, 199);
+    --clr-primario: rgb(247, 223, 231);
     --clr-secundario: rgb(229, 190, 169);
     --clr-terciario: rgb(132, 87, 77);
     --clr-claro: rgb(255, 255, 255);
-    --clr-oscuro: rgb(250, 105, 197);
+    --clr-oscuro: rgb(253, 0, 177);
     /* Tipografías */
     --ff-titulos: 'Playfair Display', serif;
     --ff-textos: 'Inter', sans-serif;

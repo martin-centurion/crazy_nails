@@ -14,7 +14,7 @@
     font-size: .8rem;
     font-family: var(--ff-titulos);
     text-align: right;
-    color: var(--clr-primario);
+    color: var(--clr-oscuro);
     width: 280px;
 }
 
@@ -43,6 +43,7 @@
 }
 
 form label input {
+    border-radius: 10px;
     padding: .75rem;
     width: 280px;
     border: 0;
