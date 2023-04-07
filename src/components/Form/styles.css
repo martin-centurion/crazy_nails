@@ -1,6 +1,6 @@
 .form {
     margin-top: 5rem;
-    height: 100vh;
+    max-height: 100vh;
 }
 
 .form__content {
@@ -48,10 +48,10 @@ form label input {
     width: 280px;
     border: 0;
     background-color: var(--clr-primario);
-    color: var(--clr-claro);
+    color: var(--clr-oscuro);
 }
 
 form label input::placeholder {
-    color: var(--clr-oscuro);
+    color: var(--clr-terciario);
 }
 
