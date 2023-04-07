@@ -1,14 +1,18 @@
 .servicios {
-    padding: 2rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
    
 }
 
 .servicios__content {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
+
 .servicios__content-title > h3 {
-    font-size: 3rem;
+    font-size: 1rem;
     font-family: var(--ff-titulos);
     font-weight: 400;
     color: var(--clr-secundario);
@@ -20,13 +24,18 @@
     font-family: var(--ff-titulos);
     font-weight: 400;
     color: var(--clr-oscuro);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .servicios__content-img {
     background-color: var(--clr-secundario);
     width: 100%;
-    height: 400px;
+    height: 200px;
     border-radius: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-terciario);
+    font-family: var(--ff-titulos);
 }

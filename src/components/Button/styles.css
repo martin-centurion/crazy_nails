@@ -1,7 +1,7 @@
 button {
     background-color: var(--clr-oscuro);
     padding: .75rem 1rem;
-    font-size: 1rem;
+    font-size: .8rem;
     font-family: var(--ff-textos);
     text-transform: uppercase;
     letter-spacing: .15rem;
@@ -20,4 +20,8 @@ button {
 button:hover {
     background-color: var(--clr-primario);
     color: var(--clr-oscuro);
+}
+
+button > i {
+    font-size: 4rem;
 }
