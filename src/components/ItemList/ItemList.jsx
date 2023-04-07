@@ -14,7 +14,7 @@ function ItemList() {
             </div>
             
         </div>
-        <Button />
+        <Button>Reservar</Button>
     </div>
   )
 }

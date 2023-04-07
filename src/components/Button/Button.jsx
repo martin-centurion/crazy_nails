@@ -1,8 +1,10 @@
 import React from 'react';
 import './styles.css';
-function Button() {
+function Button(props) {
   return (
-    <button>Continuar</button>
+    <button onClick={props.onTouchButton}>
+        {props.children}
+    </button>
   )
 }
 

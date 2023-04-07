@@ -21,7 +21,7 @@ function FormRegisterd() {
                 </form>
                 <p className='pass'>Olvido su contraseña?</p>
                 <Link to="/servicios">
-                    <Button />
+                    <Button>Continuar</Button>
                 </Link>
         </div>
     </div>
