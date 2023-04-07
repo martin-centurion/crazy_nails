@@ -7,6 +7,14 @@
     font-family: var(--ff-titulos);
     font-weight: 400;
     color: var(--clr-secundario);
+    margin-bottom: .5rem;
+}
+
+.servicios__content-title > p {
+    font-size: 1rem;
+    font-family: var(--ff-titulos);
+    font-weight: 400;
+    color: var(--clr-oscuro);
     margin-bottom: 2rem;
 }
 

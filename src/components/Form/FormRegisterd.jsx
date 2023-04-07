@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.css'
 import Button from '../Button/Button';
 import { Link } from 'react-router-dom';
+import { HiArrowNarrowRight } from 'react-icons/hi';
 
 function FormRegisterd() {
   return (
@@ -18,11 +19,12 @@ function FormRegisterd() {
                     <label htmlFor="">
                         <input type="password" placeholder='Contraseña' />
                     </label>
-                </form>
-                <p className='pass'>Olvido su contraseña?</p>
+                    <p className='pass'>Olvido su contraseña?</p>
                 <Link to="/servicios">
-                    <Button>Continuar</Button>
+                    <Button>Continuar<HiArrowNarrowRight /></Button>
                 </Link>
+                </form>
+                
         </div>
     </div>
   )

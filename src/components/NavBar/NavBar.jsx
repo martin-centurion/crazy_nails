@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
-import { BiArrowBack, BiUser } from 'react-icons/bi';
+import { BiArrowBack } from 'react-icons/bi';
+import { BsList } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 function NavBar() {
@@ -10,7 +11,7 @@ function NavBar() {
                   <BiArrowBack />
             </Link>
             <Link className='icono' to='/'>
-                  <BiUser />
+                  <BsList />
             </Link>
         </nav>
   )
