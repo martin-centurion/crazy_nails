@@ -21,10 +21,20 @@
 
 .servicios__content-title > p {
     font-size: .8rem;
-    font-family: var(--ff-titulos);
+    height: 20px;
+    font-family: var(--ff-textos);
     font-weight: 600;
     color: var(--clr-oscuro);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.servicios__content-title > h4 {
+    font-size: .8rem;
+    height: 20px;
+    font-family: var(--ff-textos);
+    font-weight: 600;
+    color: var(--clr-oscuro);
+    margin: 1rem 0 .5rem;
 }
 
 .servicios__content-img {

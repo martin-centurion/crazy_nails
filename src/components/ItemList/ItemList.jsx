@@ -1,74 +1,37 @@
 import React from 'react';
 import './styles.css';
 import Button from '../Button/Button';
-import { BiShoppingBag } from 'react-icons/bi'
+import { BiShoppingBag } from 'react-icons/bi';
 import Icons from '../Icons/Icons';
+import { Link } from 'react-router-dom';
 
-function ItemList() {
+function ItemList({ services }) {
   return (
+    
     <div className='servicios container'>
-        <div className='servicios__content'>
-            <div className='servicios__content-title'>
-                    <h3>Manicura</h3>
-                    <p>20% Off desde App.</p>
-            </div>
-            <div className='servicios__content-img'>
-                <p>Imágen</p>
-            </div>
-            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
-        </div>
-        <div className='servicios__content'>
-            <div className='servicios__content-title'>
-                    <h3>Pedicure</h3>
-                    <p>Crema de almendras.</p>
-            </div>
-            <div className='servicios__content-img'>
-                <p>Imágen</p>
-            </div>
-            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
-        </div>
-        <div className='servicios__content'>
-            <div className='servicios__content-title'>
-                    <h3>Esmaltado</h3>
-                    <p>con decoración.</p>
-            </div>
-            <div className='servicios__content-img'>
-                <p>Imágen</p>
-            </div>
-            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
-        </div>
-        <div className='servicios__content'>
-            <div className='servicios__content-title'>
-                    <h3>Esmaltado</h3>
-                    <p>con decoración.</p>
-            </div>
-            <div className='servicios__content-img'>
-                <p>Imágen</p>
-            </div>
-            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
-        </div>
-        <div className='servicios__content'>
-            <div className='servicios__content-title'>
-                    <h3>Manicura</h3>
-                    <p>20% Off desde App.</p>
-            </div>
-            <div className='servicios__content-img'>
-                <p>Imágen</p>
-            </div>
-            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
-        </div>
-        <div className='servicios__content'>
-            <div className='servicios__content-title'>
-                    <h3>Pedicure</h3>
-                    <p>Crema de almendras.</p>
-            </div>
-            <div className='servicios__content-img'>
-                <p>Imágen</p>
-            </div>
-            <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
-        </div>
-        
+        {services.map((service) => (
+        <div className='servicios__content' key={service.id}>
+            
+                <div className='servicios__content-title'>
+                    <h3>{service.name}</h3>
+                    <p>{service.include} / {service.category}</p>
+                <div className='servicios__content-img'>
+                    <p>{service.img}</p>
+                </div>
+                    <h4>Precio: ${service.price}</h4>
+                    <Link to={`/servicio/${service.id}`}>
+                        <Button>Más Info <Icons><BiShoppingBag /></Icons></Button>
+                    </Link>
+                </div>
+                
+            
+            
+        </div>    
+        ))
+
+        }    
     </div>
+    
   )
 }
 
