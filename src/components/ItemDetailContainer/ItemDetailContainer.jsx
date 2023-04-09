@@ -59,9 +59,10 @@ function ItemDetailContainer() {
             <div className='detail__content'>
                 <div className='detail__content-title' key={service.id}>
                             <h3>{service.name}</h3>
+                            <h4>{service.include}</h4>
                             <p>{service.description}</p>
                         <div className='detail__content-img'>
-                            <p>{service.img}</p>
+                            <img src={service.img} alt={service.name} />
                         </div>
                             <Link to={`/servicio/${service.id}`}>
                                 <Button>${service.price}<Icons><BiShoppingBag /></Icons></Button>

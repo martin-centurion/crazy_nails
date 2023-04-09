@@ -21,6 +21,7 @@
 
 .servicios__content-title > p {
     font-size: .8rem;
+    height: 20px;
     font-family: var(--ff-textos);
     font-weight: 400;
     color: var(--clr-oscuro);
@@ -37,14 +38,15 @@
 }
 
 .servicios__content-img {
-    background-color: var(--clr-secundario);
     width: 100%;
-    height: 200px;
-    border-radius: 10px;
     margin-bottom: .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--clr-terciario);
     font-family: var(--ff-titulos);
+}
+
+.servicios__content-img > img {
+    border-radius: 10px;
 }

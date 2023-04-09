@@ -16,7 +16,7 @@ function ItemList({ services }) {
                     <h3>{service.name}</h3>
                     <p>{service.include} / {service.category}</p>
                 <div className='servicios__content-img'>
-                    <p>{service.img}</p>
+                    <img src={service.img200} alt={service.name} />
                 </div>
                     <h4>Precio: ${service.price}</h4>
                     <Link to={`/servicio/${service.id}`}>
