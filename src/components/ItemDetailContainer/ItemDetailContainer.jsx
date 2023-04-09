@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import Button from '../Button/Button';
 import { BiShoppingBag } from 'react-icons/bi';
 import Icons from '../Icons/Icons';
+import './styles.css';
 
 
 import { initializeApp } from "firebase/app";
@@ -54,15 +55,19 @@ function ItemDetailContainer() {
   return (
     <div className='container'>
         <NavBar />
-        <div className='servicios__content-title' key={service.id}>
-                    <h3>{service.name}</h3>
-                    <p>{service.description}</p>
-                <div className='servicios__content-img'>
-                    <p>{service.img}</p>
+        <div className='detail'>
+            <div className='detail__content'>
+                <div className='detail__content-title' key={service.id}>
+                            <h3>{service.name}</h3>
+                            <p>{service.description}</p>
+                        <div className='detail__content-img'>
+                            <p>{service.img}</p>
+                        </div>
+                            <Link to={`/servicio/${service.id}`}>
+                                <Button>${service.price}<Icons><BiShoppingBag /></Icons></Button>
+                            </Link>
                 </div>
-                    <Link to={`/servicio/${service.id}`}>
-                        <Button>${service.price}<Icons><BiShoppingBag /></Icons></Button>
-                    </Link>
+            </div>
         </div>
     </div>
 
