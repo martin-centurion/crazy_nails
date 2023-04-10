@@ -68,7 +68,9 @@ function ItemListContainer() {
 
   return (
     <div className='container'>
-        <NavBar />
+        <NavBar
+          onTouchButton={"/"}
+        />
         {
           isLoading?
           <Loader />

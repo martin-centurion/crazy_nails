@@ -57,7 +57,9 @@ function ItemDetailContainer() {
     
   return (
     <div className='container'>
-        <NavBar />
+        <NavBar 
+            onTouchButton={"/servicios"}
+        />
         {
             isLoading?
             <Loader />
