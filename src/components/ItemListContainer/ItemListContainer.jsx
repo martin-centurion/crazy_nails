@@ -8,6 +8,7 @@ import { collection, getDocs, query, where } from 'firebase/firestore';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
+import Loader from '../Loader/Loader';
 
 
 const firebaseConfig = {
@@ -44,6 +45,7 @@ async function getItemsByCategoryFromDatabase(categoryURL) {
 
 function ItemListContainer() {
   const [services, setServices] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const params = useParams();
   const idCategory = params.idCategory;
@@ -52,9 +54,11 @@ function ItemListContainer() {
     if(idCategory === undefined) {
         let respuesta = await getItemsFromDatabase();
         setServices(respuesta);
+        setIsLoading(false);
     } else {
         let respuesta = await getItemsByCategoryFromDatabase(idCategory);
         setServices(respuesta);
+        setIsLoading(false);
     }
   }
 
@@ -65,7 +69,12 @@ function ItemListContainer() {
   return (
     <div className='container'>
         <NavBar />
-        <ItemList services={ services }/>
+        {
+          isLoading?
+          <Loader />
+          :
+          <ItemList services={ services }/>
+        }
     </div>
   )
 }

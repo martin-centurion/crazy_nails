@@ -6,6 +6,7 @@ import Button from '../Button/Button';
 import { BiShoppingBag } from 'react-icons/bi';
 import Icons from '../Icons/Icons';
 import './styles.css';
+import Loader from '../Loader/Loader';
 
 
 import { initializeApp } from "firebase/app";
@@ -40,6 +41,7 @@ async function getSingleItemFromDatabase(idItem) {
 function ItemDetailContainer() {
 
     const [service, setService] = useState({});
+    const [isLoading, setIsLoading] = useState(true);
 
     const params = useParams();
     const idUser = params.idUser;
@@ -48,6 +50,7 @@ function ItemDetailContainer() {
         getSingleItemFromDatabase(idUser)
             .then((respuesta) => {
                 setService(respuesta);
+                setIsLoading(false);
             })
             .catch((error) => alert(error));
     }, [idUser]);
@@ -55,21 +58,26 @@ function ItemDetailContainer() {
   return (
     <div className='container'>
         <NavBar />
-        <div className='detail'>
-            <div className='detail__content'>
-                <div className='detail__content-title' key={service.id}>
-                            <h3>{service.name}</h3>
-                            <h4>{service.include}</h4>
-                            <p>{service.description}</p>
-                        <div className='detail__content-img'>
-                            <img src={service.img} alt={service.name} />
-                        </div>
-                            <Link to={`/servicio/${service.id}`}>
-                                <Button>${service.price}<Icons><BiShoppingBag /></Icons></Button>
-                            </Link>
+        {
+            isLoading?
+            <Loader />
+            :
+            <div className='detail'>
+                <div className='detail__content'>
+                    <div className='detail__content-title' key={service.id}>
+                                <h3>{service.name}</h3>
+                                <h4>{service.include}</h4>
+                                <p>{service.description}</p>
+                            <div className='detail__content-img'>
+                                <img src={service.img} alt={service.name} />
+                            </div>
+                                <Link to={`/servicio/${service.id}`}>
+                                    <Button>${service.price}<Icons><BiShoppingBag /></Icons></Button>
+                                </Link>
+                    </div>
                 </div>
             </div>
-        </div>
+        }
     </div>
 
   )
